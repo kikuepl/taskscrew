@@ -74,8 +74,8 @@ if uploaded_file is not None:
                     response += f"{t} に対応する項目は見つかりませんでした"
                     continue
                 if t == "10":
-                    response += f"入数 (小箱) : {dct[p_id_idx][product_num["8"]]}  \n"
-                    response += f"入数 (大箱) : {dct[p_id_idx][product_num["9"]]}  \n"
+                    response += f"入数 (小箱) : {dct[p_id_idx][product_num['8']]}  \n"
+                    response += f"入数 (大箱) : {dct[p_id_idx][product_num['9']]}  \n"
                 else:
                     response += f"{product_num[t]} : {dct[p_id_idx][product_num[t]]}  \n"
             with st.chat_message("assistant"):
