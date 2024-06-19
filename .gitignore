@@ -1,0 +1,5 @@
+memo
+prompt
+.venv
+*.csv
+*.xlsx
