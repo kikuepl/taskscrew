@@ -97,7 +97,7 @@ if uploaded_file is not None:
                 if screwname in screwname_dct:
                     for idx in screwname_dct[screwname]:
                         if dct[idx][product_num["3"]] >= num:
-                            response += f"{dct[idx]["品番"]}  \n"
+                            response += f"{dct[idx]['品番']}  \n"
             with st.chat_message("assistant"):
                 st.markdown(response)
             st.session_state.messages.append({"role": "assistant", "content": response})
